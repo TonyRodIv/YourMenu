@@ -25,6 +25,7 @@ let menuItens = document.getElementById('menu-itens')
 
 let writeMenu = menu.map((menu) => {
     let html = `
+    <div>
         <div class="item-image">
                         <img src="${menu.image}" alt="${menu.title}" srcset="">
                     </div>
@@ -37,6 +38,8 @@ let writeMenu = menu.map((menu) => {
                             <p>${menu.description}</p>
                         </div>
                     </div>
+        </div>
+
         `
     menuItens.innerHTML += html
 });

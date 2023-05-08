@@ -14,9 +14,12 @@ body{
     background-color: #f9f9fb;
 }
 main{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1000px;
     grid-template-rows: 360px 220px;
+    grid-area: auto; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -62,11 +65,15 @@ main header{
     font-weight: bolder;
     color: #fff;
 }
+
 .menu-itens{
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1.6rem;
     width: 80%;
-    max-width: 64rem;
+    max-width: 40rem;
 }
 .menu-itens p{
     text-align: justify;

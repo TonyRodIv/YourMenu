@@ -94,6 +94,9 @@ main header{
     justify-content: space-between;
     border-bottom: 1px dotted #617d98;
 }
+.price{
+    font-weight: bold;
+}
 .item-description p{
     color: #3e2c0a;
     font-size: 1.8rem;
